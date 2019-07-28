@@ -1,0 +1,95 @@
+#menu-mobile{
+    display: none;
+}
+
+#menu-desktop{
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    position: sticky;
+    background: rgba(255, 255, 255, 0.822);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+#logo a{
+    color: var(--grisFonce);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    transition: all 0.5s ease;
+}
+
+#logo a:hover{
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+}
+
+#menu-desktop ul{
+    display: flex;
+}
+
+#menu-desktop ul li a{
+    padding: 1rem;
+    color: var(--grisFonce);
+    font-size: 1.3rem;
+    transition: all 0.8s ease;
+}
+
+#menu-desktop ul li a:hover{
+    background: var(--tealT);
+    color: var(--wht);
+    border-radius: 100px;
+}
+
+@media(max-width: 768px){
+    #menu-desktop{
+        display: none;
+    }
+
+    #menu-mobile{
+        display: block;
+        z-index: 2;
+        position: fixed;
+    }
+
+    #toggler{
+        opacity: 0;
+    }
+
+    #hamberger{
+        font-size: 4rem;
+        color: var(--tealT);
+    }
+
+    .menu-mobile-toggle{
+        width: 100vw;
+        transform: scale(0);
+        transition: all 0.5s ease-in-out;
+    }
+
+   .menu-mobile-toggle li{
+       padding: 0.8rem 0;
+       text-align: center;
+    }
+
+   .menu-mobile-toggle li a{
+        color: var(--wht);
+        padding: 0.5rem 8.7rem;
+        background: var(--tealT);
+        border-radius: 5px;
+        font-size: 1.2rem;
+    }
+
+    .menu-mobile-toggle li a:active{
+        background: var(--wht);
+        color: var(--tealT);
+        font-weight: bold;
+    }
+
+    #toggler:checked ~ .menu-mobile-toggle{
+        transform: scale(1);
+    }
+
+}

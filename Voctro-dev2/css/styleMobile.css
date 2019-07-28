@@ -1,0 +1,78 @@
+.service-inner{
+    height: 700px;
+    margin-bottom: 0.5rem;
+}
+
+@media(max-width: 500px){
+    /* acceuil */
+    .services-container{
+        display: block;
+    }
+
+    .lead{
+       font-size: 1.5rem;
+    }
+
+    .p-lead{
+        font-size: 1rem;
+    }
+
+    .boosts-container{
+        display: block;
+    }
+
+    .section-anba{
+        display: none;
+    }
+
+    /* a propos */
+    #info{
+        height: 80vh;
+    }
+
+    .info-img,
+    .info-text{
+        height: 50%;
+    }
+
+    .info-text p{
+        font-size: 0.7rem;
+        
+    }
+    .info-container{
+        display: block;
+    }
+
+    .details p{
+        font-size: 0.7rem;
+    }
+
+    .details a{
+        font-size: 1rem;
+    }
+
+    .lead-2{
+        font-size: 2rem;
+    }
+
+    /* services */
+
+    .services-container-inner{
+        display: block;
+    }
+
+    .service-inner{
+        margin-bottom: 1rem;
+       border-bottom: 3px solid var(--tealT);
+    }
+
+    .service-box-text p{
+        font-size: 0.8rem;
+    }
+
+    /* contact */
+    .contact-container{
+        display: block;
+        padding: 0;
+    }
+}

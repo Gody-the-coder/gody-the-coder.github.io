@@ -1,0 +1,86 @@
+.footer-container{
+     color: var(--tealT);
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 2rem;
+     overflow: hidden;
+}
+
+.copyright{
+    text-align: center;
+    grid-column: 1 / span 3;
+    color: var(--wht);
+    background: var(--grisFonce);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.reseaux-sociaux ul{
+    display: flex;
+    justify-content: center;
+}
+
+.email-capture input[type="email"]{
+    padding: 0.8rem;
+    border: solid 2px var(--tealT);
+    border-radius: 10px;
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.email-capture input[type="email"]:focus{
+    outline: none;
+    border: solid 2px var(--tealT);
+}
+
+.email-capture input[type="email"]::placeholder{
+    font-size: 1.2rem;
+}
+
+.email-capture .btn{
+    background: var(--tealT);
+    color: var(--wht);
+}
+
+.liens-footer ul li{
+    margin-bottom: 0.5rem;
+    border-bottom: 1px dotted var(--grisPal1);
+}
+
+.liens-footer ul li a{
+    color: var(--tealT);
+    transition: 0.4s ease-in-out;
+    text-transform: capitalize;
+}
+
+.liens-footer ul li a:hover{
+    color: var(--grisFonce);
+}
+
+.reseaux-sociaux ul{
+    margin-top: 1.5rem;
+}
+
+.reseaux-sociaux ul li a{
+    padding: 0 1.5rem;
+    color: var(--tealT);
+    font-size: 2rem;
+    transition: 0.4s ease-in-out;
+}
+
+.reseaux-sociaux ul li a:hover{
+    font-size: 3rem;
+    color: var(--grisFonce);
+}
+
+
+@media(max-width: 768px){
+    .footer-container{
+        display: block;
+         padding: 1rem;
+    }
+
+    .footer-container > div{
+        margin-bottom: 0.5rem;
+    }
+}

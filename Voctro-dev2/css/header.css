@@ -1,0 +1,106 @@
+#home-header,
+#inner-header{
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(to right bottom, var(--blueT2), var(--blueT1)), url(../img/landing3.jpeg) no-repeat fixed;
+    overflow: hidden;
+}
+
+.contenu{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--wht);
+}
+
+.contenu h1 span{
+    display: block;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.contenu h1 span:first-child{
+    font-size: 4.2rem;
+    letter-spacing: 1.5rem;
+    animation: spanAnimate1 1s ease-in-out;
+}
+
+@keyframes spanAnimate1{
+    0%{
+       transform: translateX(-200px);
+       opacity: 0; 
+    }
+
+    80%{
+        transform: translateX(20px);
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.contenu h1 span:last-child{
+    font-size: 1.2rem;
+    letter-spacing: 1rem;
+     animation: spanAnimate2 1s ease-in-out;
+}
+
+@keyframes spanAnimate2{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    80%{
+        transform: translateX(-10px)
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn-header{
+    background: var(--wht);
+    color: var(--grisFonce);
+}
+
+
+/* Inner header */
+
+#inner-header{
+    height: 35vh;
+}
+
+@media(max-width: 380px){
+
+        .contenu h1 span:first-child{
+            font-size: 2rem;
+            letter-spacing: 1rem;
+        }
+
+        .contenu h1 span:last-child{
+            font-size: 0.7rem;
+             letter-spacing: 0.5rem;
+        }
+}
+
+@media(max-width: 500px){
+
+    
+        .contenu h1 span:first-child{
+            font-size: 2.4rem;
+        }
+
+        .contenu h1 span:last-child{
+            font-size: 1rem;
+        }
+}
+
+/*THE D.R.Y PRINCIPLE => DONT' REPEAT YOUR CODE*/

@@ -1,0 +1,14 @@
+:root{
+   --blueT1: rgba(0, 85, 100, 0.897);
+    --blueT2: rgba(8, 62, 71, 0.63);
+    --tealT: rgba(0, 128, 128, 0.801);
+    --teal: rgb(3, 119, 119);
+    --tealT1: rgba(2, 206, 206, 0.801);
+    --vertFonce: rgb(4, 167, 104);
+    --grisFonce: rgb(35, 37, 37);
+    --grisPal1: rgb(58, 59, 59);
+    --grisPal2: rgb(101, 102, 102);
+    --grislight: rgb(248, 246, 246);
+    --wht: #fff;
+    --grose: 2rem;
+}
